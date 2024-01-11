@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Ad Skiper",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content-script.js"]
+      }
+    ]
+  }
+  
