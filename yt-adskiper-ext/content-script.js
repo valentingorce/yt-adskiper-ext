@@ -1,5 +1,4 @@
 function findAndClickButton() {
-    console.log('There 2');
     var buttonText = "Ignorer";
     var buttonClass = "ytp-button";
 
@@ -7,7 +6,6 @@ function findAndClickButton() {
 
     buttons.forEach(function (button) {
         if (button.textContent.trim() === buttonText) {
-            console.log('FOUND!!!');
             button.click();
         }
     });
@@ -18,4 +16,3 @@ function findAndClickButton() {
 }
 
 setInterval(findAndClickButton, 1000); // check the button every second
-console.log('Here I am');
