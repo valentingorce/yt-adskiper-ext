@@ -1,11 +1,15 @@
 function findAndClickButton() {
-    var buttonText = "Ignorer";
+    var buttonTextFR = "Ignorer";
+    var buttonTextEN = "Skip";
     var buttonClass = "ytp-button";
 
     var buttons = document.querySelectorAll('.' + buttonClass);
 
     buttons.forEach(function (button) {
-        if (button.textContent.trim() === buttonText) {
+        if (button.textContent.trim() === buttonTextFR) {
+            button.click();
+        }
+        else if (button.textContent.trim() === buttonTextEN) {
             button.click();
         }
     });
